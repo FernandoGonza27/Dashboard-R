@@ -20,9 +20,9 @@ server <- function(input, output, session) {
   con <- dbConnect(odbc::odbc(),
                    Driver = "SQL Server",
                    Server = "localhost",
-                   Database = "northwind",
-                   UID = "sa",
-                   PWD = "Admin12345",
+                   Database = "YouDataBase",
+                   UID = "User",
+                   PWD = "Password",
                    Port = 1433)
   
   # Cargar datos de la vista 'invoices'
